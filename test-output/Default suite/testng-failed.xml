@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGLearn.GoogleTest">
+      <class name="com.TestNGLearn.GoogleTitleTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="googleTitleTest"/>
+          <include name="setUp"/>
+          <include name="GoogleLogoTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.TestNGLearn.GoogleTest -->
+      </class> <!-- com.TestNGLearn.GoogleTitleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

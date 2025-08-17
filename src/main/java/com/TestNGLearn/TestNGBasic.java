@@ -16,17 +16,22 @@ public class TestNGBasic {
 		// @BeforeSuite -- DSetup systtem property for chrome driver
 		// @BeforeTest -- Launch Browser
 		// @BeforeClass -- Login to application
-		// @BeforeClass -- Enter URL
+
+		// @BeforeMethod -- Enter URL
 		// @Test -- Logo Test
 		// @AfterMethod -- Log out from application
-		// @BeforeClass -- Enter URL
+
+		// @BeforeMethod -- Enter URL
 		// @Test -- Search Text
 		// @AfterMethod -- Log out from application
-		// @BeforeClass -- Enter URL
+
+		// @BeforeMethod -- Enter URL
 		// @Test -- Verify Title of the page
 		// @AfterMethod -- Log out from application
+
 		// @AfterClass -- Delete Cookies
 		// @AfterTest -- Close Browser
+
 	}
 
 	// Pre-requisite Annotations
@@ -46,7 +51,7 @@ public class TestNGBasic {
 
 	@BeforeMethod
 	public void EnterUrl() {
-		System.out.println("@BeforeClass -- Enter URL");
+		System.out.println("@BeforeMethod -- Enter URL");
 	}
 
 	// Test Annotations

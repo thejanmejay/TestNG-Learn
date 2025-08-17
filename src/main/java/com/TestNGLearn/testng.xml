@@ -1,0 +1,18 @@
+<suite name="TestNG Session Test Automation Suite">
+	<test name="Different TestNG Features Test">
+		<classes>
+			<class name="com.TestNGLearn.ExceptionTimeOutTest" />
+			<class name="com.TestNGLearn.GoogleTest" />
+			<class name="com.TestNGLearn.GoogleTitleTest" />
+			<class name="com.TestNGLearn.InvocationCountTest" />
+			<class name="com.TestNGLearn.TestNGBasic" />
+			<class name="com.TestNGLearn.TestNGFeatures" />
+
+		</classes>
+
+
+
+	</test>
+
+
+</suite>

@@ -24,25 +24,42 @@ public class GoogleTest {
 		driver.get("https://www.google.com");
 	}
 
-	@Test
+	@Test(priority=1, groups="Title")
 	public void googleTitleTest() {
 		String title = driver.getTitle();
 		System.out.println("Page title is: " + title);
+		
 	}
 
-	@Test
+	@Test(priority=2, groups="Logo")
 	public void GoogleLogoTest() {
 		boolean b = driver.findElement(By.xpath("//*[@id='hplogo']")).isDisplayed();
 		System.out.println("Google logo is displayed." + b);
 	}
 
-	@Test
+	@Test(priority=3, groups="Search")
 	public void googleSearchTest() {
 		driver.findElement(By.name("q")).sendKeys("Selenium WebDriver");
 		driver.findElement(By.name("btnK")).click();
 		String searchResultTitle = driver.getTitle();
 		System.out.println("Search result title is: " + searchResultTitle);
 	}	
+	@Test(priority=4, groups="SearchBox")
+	public void googleSearchBoxTest() {
+		boolean isSearchBoxDisplayed = driver.findElement(By.name("q")).isDisplayed();
+		System.out.println("Google search box is displayed: " + isSearchBoxDisplayed);
+	}
+	@Test(priority=5, groups="SearchButton")
+	public void googleSearchButtonTest() {
+		boolean isSearchButtonDisplayed = driver.findElement(By.name("btnK")).isDisplayed();
+		System.out.println("Google search button is displayed: " + isSearchButtonDisplayed);
+	}
+	@Test(priority=6, groups="FeelingLuckyButton")
+	public void googleFeelingLuckyButtonTest() {
+		boolean isFeelingLuckyButtonDisplayed = driver.findElement(By.name("btnI")).isDisplayed();
+		System.out.println("Google 'I'm Feeling Lucky' button is displayed: " + isFeelingLuckyButtonDisplayed);
+	}
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
