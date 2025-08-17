@@ -84,6 +84,3 @@ This repo is mainly for **self-learning**, but if you want to share improvements
 **Janmejay Singh**
 QA Engineer | Test Automation Enthusiast
 📌 Building strong foundations in TestNG & Selenium
-
-Do you want me to also include **badges** (like Java version, TestNG, Selenium, etc.) at the top for a more professional GitHub look?
-```
