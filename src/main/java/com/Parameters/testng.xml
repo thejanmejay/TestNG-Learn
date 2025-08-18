@@ -1,0 +1,15 @@
+<suite name="Yahoo app test autaomation suite">
+
+	<test name="Yahoo app Test">
+		<parameter name="env" value="QA" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="https://login.yahoo.com/" />
+		<parameter name="username" value="testuser" />
+
+		<classes>
+			<class name="com.Parameters.ParameterTest" />
+		</classes>
+
+	</test>
+
+</suite>
