@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Examples" parallel="instances" thread-count="4">
+	<test name="Parallel Testing Suite">
+		<classes>
+			<class
+				name="com.parallel.dataprovider.DataProviderParallelTest" />
+		</classes>
+	</test>
+	<test name="Parallel Testing Suite 2">
+		<classes>
+			<class name="com.parallel.dataprovider.FactoryParallelTest" />
+		</classes>
+	</test>
+</suite>

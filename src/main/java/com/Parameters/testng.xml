@@ -2,7 +2,7 @@
 
 	<test name="Yahoo app Test">
 		<parameter name="env" value="QA" />
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="chrome" />
 		<parameter name="url" value="https://login.yahoo.com/" />
 		<parameter name="username" value="testuser" />
 

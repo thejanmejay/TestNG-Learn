@@ -38,6 +38,20 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-firefox-driver</artifactId>
+		<version>4.21.0</version>
+		<scope>test</scope>
+		</dependency>
+
+		<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-edge-driver</artifactId>
+		<version>4.21.0</version>
+		<scope>test</scope>
+		</dependency>
+
 		<!-- Apache POI (Excel support) -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -58,22 +72,22 @@
 			<artifactId>opencsv</artifactId>
 			<version>5.9</version>
 		</dependency>
-            
-            <!-- Log4j API -->
+
+		<!-- Log4j API -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
     <version>2.20.0</version>
 </dependency>
 
-<!-- Log4j Core -->
+		<!-- Log4j Core -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-core</artifactId>
     <version>2.20.0</version>
 </dependency>
 
-<!-- SLF4J bridge for Log4j (needed for TestNG logging) -->
+		<!-- SLF4J bridge for Log4j (needed for TestNG logging) -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-slf4j-impl</artifactId>
